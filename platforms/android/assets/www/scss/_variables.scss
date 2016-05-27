@@ -1,0 +1,40 @@
+/* 	Scss Document */
+
+/* 	KULER COLOURS */
+
+/* 	Black 		#000000 
+   	Orange		#FF991A
+   	White		#FFFFFF
+   	Dark Grey	#7F7F7F
+   	Light Grey	#CCCCCC   */
+
+$black			: #000000;
+$primary_color	: #6998FF;
+$white			: #FFFFFF;
+$darkgrey		: #7F7F7F;
+$lightgrey		: #CCCCCC;
+   	
+/* 	GOOGLE FONTS */
+
+/* 	font-family: 'Francois One', sans-serif;
+	font-family: 'Bree Serif', serif;    */
+
+$font-primary:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-secondary:  "Droid Serif", "Georgia", Cambria, Times New Roman, Times, serif;
+
+/* Text */
+
+$base-text-color    : #000000;
+
+/*  Widths */
+
+$breakpoint-small	: 400px;
+$breakpoint-medium	: 600px;
+$breakpoint-large	: 1024px;
+
+/* Grid Variables */
+$col3-height:		4rem;
+$col3-margin-sm:	0px;
+$col3-margin-md:	0px;
+$col3-margin-lg:	0px;
+

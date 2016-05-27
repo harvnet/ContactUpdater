@@ -1,0 +1,335 @@
+/*  LIST VIEW WITH NOTCHES */
+
+
+[data-role=listview]{
+  list-style:none;
+}
+
+[data-role=listview] li{
+    font-size: 1.2rem;
+    font-family:$font-primary;
+    line-height: 1.5;
+    padding:0.5rem 2rem;
+    width: 82%;
+    background-color: $lightgrey;
+    border-top:1px solid $white;
+    border-bottom: 1px solid $black;
+	text-align:center;
+}
+ 
+[data-role=overlay]{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:10;
+  height:100%;
+  width:100%;
+  background-color: rgba(0,0,0,0.82);
+}
+[data-role=modal]{
+  position:fixed;
+  top:10%;
+  left:5%;
+  width: 75%;
+  z-index:15;
+  max-height:80%;
+  padding:10px;
+  border:1px solid #333;
+  min-height:10%;
+  color:#fff;
+  background-color:$primary_color;
+  box-shadow:1px 1px 2px rgb(0,0,0);
+}
+
+#mapoutput
+{
+	width: 350px;
+	height: 450px;
+}
+/*************************************
+        Forms
+*************************************/
+.formBox{
+  width: 16rem;
+  padding: .2rem 1rem;
+}
+
+.formBox2{
+  width: 16rem;
+  text-align: center;
+}
+
+label {
+	float: left;
+	text-align: right;
+	width: 5rem;
+	margin-right: 1rem;
+	font-familty: $font-primary;
+	font-size: .6rem;
+	line-height: .8rem;
+	vertical-align: middle;
+	color: $white;	
+}
+
+.modelrow1, .modelrow2, .modelrow3, .modelrow4, .modelrow5 {
+  width: 16rem;
+  padding: .2rem 1rem;
+  float: left;	
+}
+	
+.modelrow6{
+  width: 16rem;
+  text-align: center;
+  float: left;
+}	
+
+.leftlabel1, .leftlabel2, .leftlabel3, .leftlabel4, .leftlabel5 {
+	/*float: left;*/
+	text-align: left;
+	width: 16rem;
+	margin-right: .2rem;
+	font-familty: $font-primary;
+	font-size: .6rem;
+	line-height: .8rem;
+	vertical-align: middle;
+	color: $white;
+}
+
+#name, #phone1, #phone2, #longitude, #latitude {
+  line-height: 1.2rem;
+  font-size: 1.0rem;
+  padding:0 .5rem;
+  font-family: $font-primary;
+  vertical-align: middle;
+  color: yellow;
+  width: 16rem;
+}
+
+#backbar {
+	background-color: #333;
+	text-align: center;
+}
+
+#btnBack {
+	margin-top: 1rem;	
+}
+
+::-webkit-input-placeholder { color: $black; }
+::-moz-placeholder { color: $black; }	
+:-ms-input-placeholder {color: $black; }
+input:-moz-placeholder {color: $black; }
+
+input, select{
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  padding:0 1rem;
+  max-width:100%;
+  font-family: $font-primary;
+  vertical-align: middle;
+  color: $black;
+  width: 16rem;
+}
+
+
+
+.narrow{
+  width:2rem;
+}
+.btn{
+  width:6rem;
+}
+.med{
+  width:10rem;
+}
+.lg{
+  width:25rem;
+}
+.xlg{
+  width:40rem;
+}
+ 
+ 
+*{
+	padding:0;
+	margin:0;
+		
+}
+html{
+	width:100%;
+	height:100%;
+    background-color:#333;
+    overflow:hidden;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+body {
+	height: 100%;
+}
+
+h2, h3{
+	font-family:$font-secondary;
+	padding:0.2rem 2rem;
+	font-size: 1.2rem;
+}
+
+p, ul.desc {
+	font-family:$font-primary;
+	font-size: .8rem;
+	/*margin-left: 2rem;
+	margin-right: 2rem;*/
+}
+
+/********************************
+        TABS
+********************************/
+
+ul.tabs{
+	width:100%;
+	height:3rem;
+	/*margin-bottom:30px;*/
+}
+.tabs li.tab{
+	background:$darkgrey !important;
+	float:left; 
+	display:inline-block;
+	width:33.333%;
+}
+.tabs li.tab a{
+	display: block;
+	padding: 0.5rem 2rem;
+	font-size: 2rem;
+	line-height: 2rem;
+	height: 3rem;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	background-color: $lightgrey !important;
+	text-align: center;
+	border-top:1px solid $darkgrey !important;
+	border-right:1px solid $darkgrey !important;
+	border-left:1px solid $darkgrey !important;
+}
+.tabs li.tab a.activetab{
+	background-color:$darkgrey !important;
+	border-top:1px solid $darkgrey !important;
+	border-right:1px solid $darkgrey !important;
+	border-left:1px solid $darkgrey !important;
+}
+
+/********************************
+        PAGES
+********************************/
+
+[data-role="page"]{
+	/*display:none;*/
+	/*background-color:$black;*/
+	color: $black;	
+	/*width:100%;*/
+	padding-bottom: 60px;
+	position:absolute; 
+	top: 3rem; 	
+	margin-top: -1px;
+	/*left: 100%;*/
+	/*right: -10px;*/
+	/*transition: left 0.5s linear,
+			  right 0.5s linear; */
+	z-index: 10;
+	/*** Items to trigger hardware acceleration ***/
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-ms-perspective: 1000;
+	perspective: 1000;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);  
+}
+[data-role=page].active{ 
+  left: 0;
+  right: 0;
+  z-index: 5;
+  padding-bottom: 60px;
+  /*background-color:$white;*/
+  /*border-top:1px solid #lightgrey;*/
+}
+[data-role=page].show{
+  display:block;
+}
+[data-role=page].hidden{
+  display:none;
+}
+div#home{
+	display:block;	
+}
+[data-role="header"]{
+	background-color: $primary_color;
+		position: fixed;
+			z-index: 100;
+				width: 100%;
+	height:3rem;
+}
+[data-role="header"] h1{
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 2px $lightgrey;
+  padding:0.4rem;
+  color: $black;
+  text-align:center;
+  letter-spacing:0.2rem;
+  word-spacing: 0.7rem;
+  font-variant:small-caps;
+  font-family:$font-secondary;
+}
+[data-role="footer"] {
+	background-color: $primary_color;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	z-index: 100;
+}
+
+[data-role="footer"] h3 {
+	color: $black;
+	text-align: center;
+}
+
+[data-role="header"] h3 {
+	color: $primary-color;
+	text-align: center;
+}
+
+[data-role="content"]{
+  margin-top: -1px;
+	border-top:1px solid #666;	
+  /* to match the top of the active tab */
+}
+[data-role="content"] p:last-child{
+	padding-bottom:0rem;
+}
+
+/*** ICONS  ****/
+
+#hometab {
+	background: url("../img/home.png") no-repeat 50% 50%;
+	background-size: 3rem 3rem;
+	text-align: center;	
+}
+
+#geotab {
+	background: url("../img/compass.png") no-repeat 50% 50%;
+	background-size: 3rem 3rem;
+	text-align: center;
+}
+
+#contacttab {
+	background: url("../img/contacts.png") no-repeat 50% 50%;
+	background-size: 3rem 3rem;
+	text-align: center;
+}
+
+

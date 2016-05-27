@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ca.edumedia.harv0116.midterm" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Contact Updater</name>
+    <description>
+        A program that does geolocation and contacts
+    </description>
+   <author email="harv0116@algonquinlive.com">
+        Paul Harvey
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+	<platform name="android">
+	  <icon src="www/icons/plogo_mdpi_48x48.png" density="mdpi" />
+	  <icon src="www/icons/plogo_hdpi_72x72.png" density="hdpi" />
+	  <icon src="www/icons/plogo_xhdpi_96x96.png" density="xhdpi" />
+	  <icon src="www/icons/plogo_xxhdpi.png" density="xxhdpi" />
+
+	  <splash src="www/splash/splashscreen_800x480land.png" density="land-hdpi"/>
+	   <splash src="www/splash/splashscreen_320x200land.png" density="land-ldpi"/>
+	   <splash src="www/splash/splashscreen_480x320land.png" density="land-mdpi"/>
+	   <splash src="www/splash/splashscreen_1280x720land.png" density="land-xhdpi"/>
+	   
+	   <splash src="www/splash/splashscreen_480x800port.png" density="port-hdpi"/>
+	   <splash src="www/splash/splashscreen_200x320port.png" density="port-ldpi"/>
+	   <splash src="www/splash/splashscreen_320x480port.png" density="port-mdpi"/>
+	   <splash src="www/splash/splashscreen_720x1280port.png" density="port-xhdpi"/>
+	
+	</platform>
+</widget>

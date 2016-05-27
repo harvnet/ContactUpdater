@@ -1,0 +1,27 @@
+.tabbar {
+	max-width: ( $breakpoint-small );
+	margin: 0 auto;
+}
+.row {	
+	@extend .clearfix;
+}
+.col-3 {
+	text-align: center;
+	height: $col3-height;
+	@include equalSpaced(3, $col3-margin-sm, $breakpoint-small );
+	float: left;
+}
+
+@media only screen and (min-width: $breakpoint-small) {
+/* no change */
+}
+
+@media only screen and (min-width: $breakpoint-medium) {
+	.tabbar { max-width: $breakpoint-medium; }	
+	.col-3 { @include equalSpaced(3, $col3-margin-md, $breakpoint-medium); }
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+	.tabbar { max-width: $breakpoint-large; }
+	.col-3 { @include equalSpaced(3, $col3-margin-lg, $breakpoint-large); }
+}

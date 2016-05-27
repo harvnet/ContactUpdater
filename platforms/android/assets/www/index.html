@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Roboto' rel='stylesheet' type='text/css'>
+        <title>Contact Updater</title>        
+    </head>
+    <body> 
+     
+    	<div data-role="header">
+    		<h1>Contact Updater</h1>
+  		</div>
+    
+	<div class="wrapper">    
+    	<section data-role="page" id="home" style="display:block">
+  			<div data-role="content">
+				<div id="displaycontact"></div>
+    			 
+  			</div>
+		</section>
+    
+        <div data-role="page" id="geo" style="display:none">
+          	<div data-role="content">
+            	<div id="mapoutput"></div>
+                <div id="backbar">
+                	<input type="button" id="btnBack" value="Back" class="btn"/>
+                </div>
+          	</div>
+        </div>
+        
+         <div data-role="overlay" style="display:none">&nbsp;</div>
+  
+      <div data-role="modal" style="display:none">
+        <h3 id="modelheader">Modal Window Title</h3>
+        	<div class="modelrow1">
+            	<div class="leftlabel1"><p>Name: </p></div>
+                <div id="name"></div>
+            </div>
+        	<div class="modelrow2">
+            	<div class="leftlabel2"><p>Phone Number: </p></div>
+                <div id="phone1"></div>
+            </div>
+            <div class="modelrow3">
+            	<div class="leftlabel3"><p>Phone Number 2: </p></div>
+                <div id="phone2"></div>
+            </div>
+            <div class="modelrow4">
+            	<div class="leftlabel4"><p>Latitude: </p></div>
+                <div id="latitude"></div>
+            </div>
+            <div class="modelrow5">
+            	<div class="leftlabel5"><p>Longitude: </p></div>
+                <div id="longitude"></div>
+            </div>        
+			<div class="modelrow6">
+            	<input type="button" id="btnOK" value="OK" class="btn"/>
+            </div>
+      </div>
+   </div>
+   
+        
+        <div data-role="footer" id="sticky">
+            <h3>Paul Harvey &copy;2015</h3>
+        </div>
+    	<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/hammer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0kyumQiko8guSTwwT7rUweHYqSxXV5Vw&sensor=SET_TO_TRUE_OR_FALSE"></script>
+    	<script type="text/javascript" src="js/index.js"></script>
+	</body>
+
+</html>
